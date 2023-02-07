@@ -2,12 +2,17 @@
   "compilerOptions": {
     "target": "es2017",
     "module": "commonjs",
-    "lib": ["es2021"],
+    "lib": ["es2021", "dom"],
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "strict": true,
     "noImplicitReturns": true,
     "skipLibCheck": true,
-    "noEmit": true
+    "noEmit": true,
+    "paths": {
+      "@math": ["src/math/index"],
+      "@shader": ["src/shader/index"],
+      "@util/*": ["src/util/*"]
+    }
   }
 }
