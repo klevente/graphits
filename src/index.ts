@@ -1,1 +1,1 @@
-export * from './sumTest';
+export * from './math';
