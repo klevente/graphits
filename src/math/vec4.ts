@@ -1,7 +1,7 @@
 export class Vec4 {
   readonly data: Float32Array;
 
-  constructor(x: number = 0, y: number = 0, z: number = 0, w: number = 0) {
+  constructor(x = 0, y = 0, z = 0, w = 0) {
     this.data = Float32Array.of(x, y, z, w);
   }
 
@@ -37,7 +37,7 @@ export class Vec4 {
     this.data[3] = w;
   }
 
-  set(x: number = 0, y: number = 0, z: number = 0, w: number = 0): Vec4 {
+  set(x = 0, y = 0, z = 0, w = 0): Vec4 {
     this.x = x;
     this.y = y;
     this.z = z;

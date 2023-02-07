@@ -1,7 +1,7 @@
 export class Vec2 {
   readonly data: Float32Array;
 
-  constructor(x: number = 0, y: number = 0) {
+  constructor(x = 0, y = 0) {
     this.data = Float32Array.of(x, y);
   }
 
@@ -21,7 +21,7 @@ export class Vec2 {
     this.data[1] = y;
   }
 
-  set(x: number = 0, y: number = 0): Vec2 {
+  set(x = 0, y = 0): Vec2 {
     this.x = x;
     this.y = y;
     return this;
