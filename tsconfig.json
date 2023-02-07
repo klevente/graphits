@@ -9,5 +9,5 @@
     "noImplicitReturns": true,
     "skipLibCheck": true,
     "noEmit": true
-  },
+  }
 }
