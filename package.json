@@ -1,0 +1,40 @@
+{
+  "name": "graphits",
+  "version": "0.0.0",
+  "description": "Type-safe WebGL-based graphics library",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "dev": "vitest",
+    "test": "vitest run",
+    "build": "tsup src/index.ts --format cjs,esm --dts",
+    "lint": "tsc && npx eslint . && prettier . --check",
+    "format": "prettier . --write",
+    "release": "npm run build && changeset publish"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/klevente/graphits.git"
+  },
+  "keywords": [
+    "webgl",
+    "typescript",
+    "graphics"
+  ],
+  "author": "Levente Krizsán",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/klevente/graphits/issues"
+  },
+  "homepage": "https://github.com/klevente/graphits#readme",
+  "devDependencies": {
+    "@changesets/cli": "^2.26.0",
+    "eslint": "^8.33.0",
+    "eslint-config-prettier": "^8.6.0",
+    "prettier": "^2.8.3",
+    "tsup": "^6.6.0",
+    "typescript": "^4.9.5",
+    "vitest": "^0.28.4"
+  }
+}
